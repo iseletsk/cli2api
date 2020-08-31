@@ -1,0 +1,15 @@
+server:   # server configuration section
+  address: 127.0.0.1:8000  # IP & Port on which to listen
+  cert-file: certs/localhost.crt # SSL Cert
+  key-file: certs/localhost.key # SSL Cert private key
+
+cli:
+  - ID: ls  # command ID, when connecting you would use https://127.0.0.1:8000/cli/ls to connect
+    command: /bin/ls  # command to execute
+    api-key: zShvIxfj9UK4Y9FXkhkreHG0Y1oI5P2R #secret key
+  - ID: cat
+    command: /bin/cat
+    output-content-type: text/plain # you can change response content type, default is text/plain
+    api-key: zShvIxfj9UK4Y9FXkhkreHG0Y1oI5P2R
+
+
